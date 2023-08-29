@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
     { text: 'Detran RJ', cols: 1, rows: 1, tcolor: '#074470', color: '#d0e6f3', img: '../assets/img/browser/detranrj.png', url: 'detranrj', type: 'web' },
     { text: '', cols: 1, rows: 1, color: '#e3efe5', img: '../assets/img/abbc/abbcassociados.png', url: 'abbcassociados', type: 'app' },
     { text: '', cols: 1, rows: 1, color: '#e1aa22', img: '../assets/img/ultragaz/ultragaz.png', url: 'ultragaz', type: 'app' },
-    { text: '', cols: 1, rows: 1, color: '#d9e003', img: '../assets/img/parcelamos/parcelamos.png', url: 'https://totem.parcelamostudo.com.br', type: 'link' },
+    { text: '', cols: 1, rows: 1, color: '#d9e003', img: '../assets/img/parcelamos/parcelamos.png', url: 'https://totem.parcelamostudo.com.br/inicial', type: 'link' },
     { text: '', cols: 1, rows: 1, color: '#ffdf2b', img: '../assets/img/browser/riodepremios.png', url: 'riodepremios', type: 'web' },
     { text: '', cols: 1, rows: 1, color: '#f3eb90', img: '../assets/img/tcacard/tca24horas.png', url: 'tcacard', type: 'app' },
   ];
