@@ -1,0 +1,15 @@
+#outer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to right, #4b5865, #39424b);
+}
+
+#inner {
+  margin: auto;
+  color: white;
+}
+
+#breve {
+  text-align: right;
+}

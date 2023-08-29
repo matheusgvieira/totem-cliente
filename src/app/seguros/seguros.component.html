@@ -1,0 +1,17 @@
+<app-back label="Seguros"></app-back>
+<mat-grid-list cols="3">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <div class="service" [style.background]="tile.color" (click)="redirect(tile.url)">
+        <div class="content">
+        <i class="fa {{tile.icon}} fa-5x" aria-hidden="true"></i>
+        <img class="logo" src="{{tile.img}}">
+        <br/>
+        <br/>
+        <h2 [style.color]="tile.tcolor">{{tile.text}}</h2>
+        </div>
+      </div>
+  </mat-grid-tile>
+</mat-grid-list>

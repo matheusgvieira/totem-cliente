@@ -1,0 +1,59 @@
+.service {
+  border-radius: 25px;
+  margin: 5px;
+  width: 100%;
+  height: 96%;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.service2 {
+  border-radius: 25px;
+  margin: 10px;
+  width: 70%;
+  height: 250px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  background-color: #dedede;
+  display: inline-block;
+}
+
+.logo {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: scale-down;
+}
+
+span {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+H2 {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.toolbar {
+  background-color: #4d9b67;
+}
+
+.grid {
+  display: table;
+  width: 100%;
+}
+
+.col {
+  display: table-cell;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}

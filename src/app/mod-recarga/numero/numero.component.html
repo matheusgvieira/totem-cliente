@@ -1,0 +1,42 @@
+<div class="toolbar" (click)="back()">
+  <fa-icon [icon]="faAngleDoubleLeft" size="3x" [styles]="{'color': 'white'}"></fa-icon>
+  <img src="../assets/img/recarga/logorv.png">
+</div>
+<br>
+<h1>
+  Recarga para a operadora
+  <div class="logo" [style.background]="bglogo">
+    <img class="logo" src="{{logo}}">
+  </div>
+</h1>
+<br>
+<h2>Digite o número do telefone.</h2>
+<div class="telefone">
+  <div class="numero"><span>(</span></div>
+  <div class="numero"><span>{{numero[1]}}</span></div>
+  <div class="numero"><span>{{numero[2]}}</span></div>
+  <div class="numero"><span>)</span></div>
+  <div class="numero"><span>{{numero[3]}}</span></div>
+  <div class="numero"><span>{{numero[4]}}</span></div>
+  <div class="numero"><span>{{numero[5]}}</span></div>
+  <div class="numero"><span>{{numero[6]}}</span></div>
+  <div class="numero"><span>{{numero[7]}}</span></div>
+  <div class="numero"><span>-</span></div>
+  <div class="numero"><span>{{numero[8]}}</span></div>
+  <div class="numero"><span>{{numero[9]}}</span></div>
+  <div class="numero"><span>{{numero[10]}}</span></div>
+  <div class="numero"><span>{{numero[11]}}</span></div>
+</div>
+
+<div class="teclado">
+  <mat-grid-list cols="3">
+    <mat-grid-tile
+        *ngFor="let key of keyboard"
+        [colspan]="key.cols"
+        [rowspan]="key.rows">
+        <div class="key" (click)="keypress(key.text)">
+          <h2>{{key.text}}</h2>
+        </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

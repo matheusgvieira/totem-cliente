@@ -1,0 +1,32 @@
+<div class="toolbar" (click)="back()">
+  <fa-icon [icon]="faAngleDoubleLeft" size="3x" [styles]="{'color': 'white'}"></fa-icon>
+  <img src="../assets/img/recarga/logorv.png">
+</div>
+<br>
+<div>
+
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let item of pedido.itens">{{item.descricao}} R${{item.valor.toFixed(2).replace(".",",")}}</mat-list-item>
+  </mat-list>
+
+  <div class="aguarde" [hidden]="!showAguarde">
+    <img src="../assets/img/loading.gif">
+    <p>Aguarde</p>
+  </div>
+
+  <div class="mensagem" [hidden]="!showMensagem">
+    <h2>{{mensagem}}</h2>
+  </div>
+
+  <div class="botoes">
+    <div class="botoes-row">
+      <div class="botao">
+        <button mat-stroked-button class="botao-mat" (click)="confirmar()" [hidden]="!showConfirmar"><span><h2>Confirmar</h2></span></button>
+      </div>
+      <div class="botao">
+        <button mat-stroked-button class="botao-mat" (click)="cancelar()" [hidden]="!showCancelar"><span><h2>Cancelar</h2></span></button>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toolbar {
+  background-color: #072645;
+  padding: 10px;
+}
+
+.toolbar .fa {
+  color: white;
+}

@@ -1,0 +1,36 @@
+<div class="toolbar" (click)="back()">
+  <fa-icon [icon]="faAngleDoubleLeft" size="3x" [styles]="{'color': 'white'}"></fa-icon>
+  <img src="../assets/img/abbc/logo.png">
+  <span>&nbsp;Crédito Consignado</span>
+</div>
+
+<div class="grid">
+  <div class="col">
+    <div class="service2" (click)="redirect('embreve')">
+      <div class="content">
+      <img class="logo" src="../assets/img/abbc/sofisa.png">
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="service2" (click)="redirect('embreve')">
+      <div class="content">
+      <img class="logo" src="../assets/img/abbc/daycoval.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-grid-list cols="4">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <div class="service" [style.background]="tile.color" (click)="redirect(tile.url)">
+        <div class="content">
+        <img class="logo" src="{{tile.img}}">
+        <h2 [style.color]="tile.tcolor">{{tile.text}}</h2>
+        </div>
+      </div>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,18 @@
+<div class="toolbar" (click)="back()">
+  <fa-icon [icon]="faAngleDoubleLeft" size="3x" [styles]="{'color': 'white'}"></fa-icon>
+  <img src="../assets/img/loterias/loterias.png">
+  <span>&nbsp;Loterias Caixa - Selecione o jogo para apostar</span>
+</div>
+<mat-grid-list cols="5">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <div class="service" [style.background]="tile.color" (click)="redirect(tile.url)">
+        <div class="content">
+          <img class="logo" src="{{tile.img}}">
+          <h2 [style.color]="tile.tcolor">{{tile.text}}</h2>
+        </div>
+      </div>
+  </mat-grid-tile>
+</mat-grid-list>

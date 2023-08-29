@@ -1,0 +1,11 @@
+#outer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to right, #9d50bb, #6e48aa);
+}
+
+#inner {
+  margin: auto;
+  color: white;
+}
